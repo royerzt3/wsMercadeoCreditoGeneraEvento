@@ -1,0 +1,286 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Viper\\Credito\\Rentabilidad\\SERVICIOS NetCore 3.1\\wsadministracionvariables-master\\WsAdministracionVariablesTest\\WsAdministracionVariablesTest.csproj": {}
+  },
+  "projects": {
+    "E:\\Viper\\Credito\\Rentabilidad\\FRONT\\bibliotecasimulador-master\\BibliotecaSimulador\\BibliotecaSimulador.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Viper\\Credito\\Rentabilidad\\FRONT\\bibliotecasimulador-master\\BibliotecaSimulador\\BibliotecaSimulador.csproj",
+        "projectName": "BibliotecaSimulador",
+        "projectPath": "E:\\Viper\\Credito\\Rentabilidad\\FRONT\\bibliotecasimulador-master\\BibliotecaSimulador\\BibliotecaSimulador.csproj",
+        "packagesPath": "E:\\Users\\zgonzalez\\.nuget\\packages\\",
+        "outputPath": "E:\\Viper\\Credito\\Rentabilidad\\FRONT\\bibliotecasimulador-master\\BibliotecaSimulador\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "E:\\Users\\zgonzalez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[4.5.3.3, )"
+            },
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Open-XML-SDK": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.0, )"
+            },
+            "System.IO": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.IO.Packaging": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.ServiceModel.Duplex": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.ServiceModel.NetTcp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.ServiceModel.Security": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Viper\\Credito\\Rentabilidad\\SERVICIOS NetCore 3.1\\wsadministracionvariables-master\\WsAdministracionVariablesTest\\WsAdministracionVariablesTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Viper\\Credito\\Rentabilidad\\SERVICIOS NetCore 3.1\\wsadministracionvariables-master\\WsAdministracionVariablesTest\\WsAdministracionVariablesTest.csproj",
+        "projectName": "WsAdministracionVariablesTest",
+        "projectPath": "E:\\Viper\\Credito\\Rentabilidad\\SERVICIOS NetCore 3.1\\wsadministracionvariables-master\\WsAdministracionVariablesTest\\WsAdministracionVariablesTest.csproj",
+        "packagesPath": "E:\\Users\\zgonzalez\\.nuget\\packages\\",
+        "outputPath": "E:\\Viper\\Credito\\Rentabilidad\\SERVICIOS NetCore 3.1\\wsadministracionvariables-master\\WsAdministracionVariablesTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "E:\\Users\\zgonzalez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "E:\\Viper\\Credito\\Rentabilidad\\SERVICIOS NetCore 3.1\\wsadministracionvariables-master\\WsAdministracionVariables\\WsAdministracionVariables.csproj": {
+                "projectPath": "E:\\Viper\\Credito\\Rentabilidad\\SERVICIOS NetCore 3.1\\wsadministracionvariables-master\\WsAdministracionVariables\\WsAdministracionVariables.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "coverlet.msbuild": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Viper\\Credito\\Rentabilidad\\SERVICIOS NetCore 3.1\\wsadministracionvariables-master\\WsAdministracionVariables\\WsAdministracionVariables.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Viper\\Credito\\Rentabilidad\\SERVICIOS NetCore 3.1\\wsadministracionvariables-master\\WsAdministracionVariables\\WsAdministracionVariables.csproj",
+        "projectName": "WsAdministracionVariables",
+        "projectPath": "E:\\Viper\\Credito\\Rentabilidad\\SERVICIOS NetCore 3.1\\wsadministracionvariables-master\\WsAdministracionVariables\\WsAdministracionVariables.csproj",
+        "packagesPath": "E:\\Users\\zgonzalez\\.nuget\\packages\\",
+        "outputPath": "E:\\Viper\\Credito\\Rentabilidad\\SERVICIOS NetCore 3.1\\wsadministracionvariables-master\\WsAdministracionVariables\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "E:\\Users\\zgonzalez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\Viper\\Credito\\Rentabilidad\\FRONT\\bibliotecasimulador-master\\BibliotecaSimulador\\BibliotecaSimulador.csproj": {
+                "projectPath": "E:\\Viper\\Credito\\Rentabilidad\\FRONT\\bibliotecasimulador-master\\BibliotecaSimulador\\BibliotecaSimulador.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[4.5.3.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

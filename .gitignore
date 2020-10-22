@@ -1,0 +1,10 @@
+.vs
+WsMercadeoCreditoGeneraEvento/[Bb]in/
+WsMercadeoCreditoGeneraEvento/[Oo]bj/Release/
+WsMercadeoCreditoGeneraEvento/[Oo]bj/Debug/
+.sonarlint/
+WsAdministracionVariablesTest/WsAdministracionVariables.ruleset
+WsAdministracionVariablesTest/DLL
+WsAdministracionVariablesTest/[Oo]bj/Debug/
+WsAdministracionVariablesTest/[Oo]bj/Release/
+WsAdministracionVariablesTest/[Bb]in/

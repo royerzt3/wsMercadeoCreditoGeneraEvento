@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <SonarQubeTestProject>False</SonarQubeTestProject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>KeyWsAdministracionVariables.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CodeAnalysisRuleSet>WsAdministracionVariables.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CodeAnalysisRuleSet>WsAdministracionVariables.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="4.5.3.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Connected Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Librerias\bibliotecasimulador-master\BibliotecaSimulador\BibliotecaSimulador.csproj" />
+  </ItemGroup>
+
+  <Target Name="SetJFrogProperties" BeforeTargets="DownloadDependencies;PrepareForBuild" Condition=" '$(ArtifactoryPublish)' == 'true' ">
+    <Message Text="Setting JFrog properties" />
+    <!--Build name property-->
+    <CreateProperty Condition=" '$(BuildName)' == '' " Value="$(MSBuildProjectName)">
+      <Output TaskParameter="Value" PropertyName="BuildName" />
+    </CreateProperty>
+    <!--Build number property-->
+    <CreateProperty Condition=" '$(BuildNumber)' == '' " Value="$([System.DateTime]::UtcNow.Ticks)">
+      <Output TaskParameter="Value" PropertyName="BuildNumber" />
+    </CreateProperty>
+    <!--Build flags-->
+    <CreateProperty Value="--build-name=$(BuildName) --build-number=$(BuildNumber)">
+      <Output TaskParameter="Value" PropertyName="BuildFlags" />
+    </CreateProperty>
+    <!--Output path pattern fix, use this property to upload all the artifacts in build OutputPath-->
+    <CreateProperty Value="$([System.String]::Copy('$(OutputPath)').Replace('\','\\'))">
+      <Output TaskParameter="Value" PropertyName="ArtifatsPatternPath" />
+    </CreateProperty>
+  </Target>
+
+
+
+  <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>
